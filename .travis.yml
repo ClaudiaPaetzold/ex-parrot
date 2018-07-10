@@ -1,15 +1,20 @@
 language: python
 sudo: false
 
-branches: 
-    only:
-        -master
+# Only run on master since we'll be using branches for our PR
+branches:
+  only:
+    - master
 
+# What Python version to use
 python:
-    -3.6
+  - 3.6
 
+# How do we install?
 install:
-    -pip install .
+  - pip install .
 
+# How do we test?
 script:
-    -pytest
+  - pytest
+
