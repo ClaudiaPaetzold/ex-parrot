@@ -18,5 +18,5 @@ install:
 
 # How do we test?
 script:
-  - pytest
+  - pytest --flake8
 
