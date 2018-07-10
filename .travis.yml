@@ -14,7 +14,7 @@ python:
 
 # How do we install?
 install:
-  - pip install .
+  - pip install . flake8 pytest-flake8 flake8-docstrings flake8-import-order
 
 # How do we test?
 script:
